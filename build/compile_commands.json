@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Dev/PracticePrograms/MakeWindow/build/MakeWindow",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\c++.exe    -o CMakeFiles\\MakeWindow.dir\\MakeWindow.cpp.obj -c C:\\Dev\\PracticePrograms\\MakeWindow\\MakeWindow\\MakeWindow.cpp",
+  "file": "C:/Dev/PracticePrograms/MakeWindow/MakeWindow/MakeWindow.cpp"
+}
+]
