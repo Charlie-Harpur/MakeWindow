@@ -1,4 +1,4 @@
-# Install script for directory: C:/Dev/PracticePrograms/MakeWindow/MakeWindow
+# Install script for directory: C:/Dev/cpp/PracticePrograms/MakeWindow/MakeWindow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

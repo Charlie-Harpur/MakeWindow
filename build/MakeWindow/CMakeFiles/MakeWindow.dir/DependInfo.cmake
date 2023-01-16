@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Dev/PracticePrograms/MakeWindow/MakeWindow/MakeWindow.cpp" "MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj" "gcc" "MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj.d"
+  "C:/Dev/cpp/PracticePrograms/MakeWindow/MakeWindow/MakeWindow.cpp" "MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj" "gcc" "MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "C:/Dev/cpp/PracticePrograms/MakeWindow/build/src/CMakeFiles/Window.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

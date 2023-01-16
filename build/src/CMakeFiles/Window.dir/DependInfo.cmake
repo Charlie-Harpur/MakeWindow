@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Dev/PracticePrograms/MakeWindow/src/String.cpp" "src/CMakeFiles/String.dir/String.cpp.obj" "gcc" "src/CMakeFiles/String.dir/String.cpp.obj.d"
+  "C:/Dev/cpp/PracticePrograms/MakeWindow/src/Window.cpp" "src/CMakeFiles/Window.dir/Window.cpp.obj" "gcc" "src/CMakeFiles/Window.dir/Window.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\PracticePrograms\MakeWindow
+CMAKE_SOURCE_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\PracticePrograms\MakeWindow\build
+CMAKE_BINARY_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles C:\Dev\PracticePrograms\MakeWindow\build\src\\CMakeFiles\progress.marks
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles 0
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles C:\Dev\cpp\PracticePrograms\MakeWindow\build\src\\CMakeFiles\progress.marks
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,18 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+src/CMakeFiles/Window.dir/rule:
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/Window.dir/rule
+.PHONY : src/CMakeFiles/Window.dir/rule
+
+# Convenience name for target.
+Window: src/CMakeFiles/Window.dir/rule
+.PHONY : Window
+
+# fast build rule for target.
+Window/fast:
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Window.dir\build.make src/CMakeFiles/Window.dir/build
+.PHONY : Window/fast
+
+Window.obj: Window.cpp.obj
+.PHONY : Window.obj
+
+# target to build an object file
+Window.cpp.obj:
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Window.dir\build.make src/CMakeFiles/Window.dir/Window.cpp.obj
+.PHONY : Window.cpp.obj
+
+Window.i: Window.cpp.i
+.PHONY : Window.i
+
+# target to preprocess a source file
+Window.cpp.i:
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Window.dir\build.make src/CMakeFiles/Window.dir/Window.cpp.i
+.PHONY : Window.cpp.i
+
+Window.s: Window.cpp.s
+.PHONY : Window.s
+
+# target to generate assembly for a file
+Window.cpp.s:
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Window.dir\build.make src/CMakeFiles/Window.dir/Window.cpp.s
+.PHONY : Window.cpp.s
 
 # Help Target
 help:
@@ -123,6 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Window
+	@echo ... Window.obj
+	@echo ... Window.i
+	@echo ... Window.s
 .PHONY : help
 
 
@@ -134,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

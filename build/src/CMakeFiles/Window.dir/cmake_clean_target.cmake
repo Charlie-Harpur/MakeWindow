@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libString.a"
+  "libWindow.a"
 )

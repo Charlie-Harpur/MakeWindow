@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\PracticePrograms\MakeWindow
+CMAKE_SOURCE_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\PracticePrograms\MakeWindow\build
+CMAKE_BINARY_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles C:\Dev\PracticePrograms\MakeWindow\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles C:\Dev\cpp\PracticePrograms\MakeWindow\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Window
+
+# Build rule for target.
+Window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Window
+.PHONY : Window
+
+# fast build rule for target.
+Window/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\Window.dir\build.make src/CMakeFiles/Window.dir/build
+.PHONY : Window/fast
+
+#=============================================================================
 # Target rules for targets named MakeWindow
 
 # Build rule for target.
@@ -137,6 +150,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MakeWindow
+	@echo ... Window
 .PHONY : help
 
 

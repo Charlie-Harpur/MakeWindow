@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\PracticePrograms\MakeWindow
+CMAKE_SOURCE_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\PracticePrograms\MakeWindow\build
+CMAKE_BINARY_DIR = C:\Dev\cpp\PracticePrograms\MakeWindow\build
 
 # Include any dependencies generated for this target.
 include MakeWindow/CMakeFiles/MakeWindow.dir/depend.make
@@ -69,18 +69,19 @@ include MakeWindow/CMakeFiles/MakeWindow.dir/progress.make
 include MakeWindow/CMakeFiles/MakeWindow.dir/flags.make
 
 MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj: MakeWindow/CMakeFiles/MakeWindow.dir/flags.make
-MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj: C:/Dev/PracticePrograms/MakeWindow/MakeWindow/MakeWindow.cpp
+MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj: MakeWindow/CMakeFiles/MakeWindow.dir/includes_CXX.rsp
+MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj: C:/Dev/cpp/PracticePrograms/MakeWindow/MakeWindow/MakeWindow.cpp
 MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj: MakeWindow/CMakeFiles/MakeWindow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj"
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj -MF CMakeFiles\MakeWindow.dir\MakeWindow.cpp.obj.d -o CMakeFiles\MakeWindow.dir\MakeWindow.cpp.obj -c C:\Dev\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj"
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj -MF CMakeFiles\MakeWindow.dir\MakeWindow.cpp.obj.d -o CMakeFiles\MakeWindow.dir\MakeWindow.cpp.obj -c C:\Dev\cpp\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp
 
 MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MakeWindow.dir/MakeWindow.cpp.i"
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp > CMakeFiles\MakeWindow.dir\MakeWindow.cpp.i
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\cpp\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp > CMakeFiles\MakeWindow.dir\MakeWindow.cpp.i
 
 MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MakeWindow.dir/MakeWindow.cpp.s"
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp -o CMakeFiles\MakeWindow.dir\MakeWindow.cpp.s
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow && C:\ProgramData\chocolatey\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\cpp\PracticePrograms\MakeWindow\MakeWindow\MakeWindow.cpp -o CMakeFiles\MakeWindow.dir\MakeWindow.cpp.s
 
 # Object files for target MakeWindow
 MakeWindow_OBJECTS = \
@@ -91,21 +92,22 @@ MakeWindow_EXTERNAL_OBJECTS =
 
 MakeWindow/MakeWindow.exe: MakeWindow/CMakeFiles/MakeWindow.dir/MakeWindow.cpp.obj
 MakeWindow/MakeWindow.exe: MakeWindow/CMakeFiles/MakeWindow.dir/build.make
+MakeWindow/MakeWindow.exe: src/libWindow.a
 MakeWindow/MakeWindow.exe: MakeWindow/CMakeFiles/MakeWindow.dir/linkLibs.rsp
 MakeWindow/MakeWindow.exe: MakeWindow/CMakeFiles/MakeWindow.dir/objects1
 MakeWindow/MakeWindow.exe: MakeWindow/CMakeFiles/MakeWindow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Dev\PracticePrograms\MakeWindow\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MakeWindow.exe"
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MakeWindow.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Dev\cpp\PracticePrograms\MakeWindow\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MakeWindow.exe"
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MakeWindow.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 MakeWindow/CMakeFiles/MakeWindow.dir/build: MakeWindow/MakeWindow.exe
 .PHONY : MakeWindow/CMakeFiles/MakeWindow.dir/build
 
 MakeWindow/CMakeFiles/MakeWindow.dir/clean:
-	cd /d C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow && $(CMAKE_COMMAND) -P CMakeFiles\MakeWindow.dir\cmake_clean.cmake
+	cd /d C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow && $(CMAKE_COMMAND) -P CMakeFiles\MakeWindow.dir\cmake_clean.cmake
 .PHONY : MakeWindow/CMakeFiles/MakeWindow.dir/clean
 
 MakeWindow/CMakeFiles/MakeWindow.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\PracticePrograms\MakeWindow C:\Dev\PracticePrograms\MakeWindow\MakeWindow C:\Dev\PracticePrograms\MakeWindow\build C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow C:\Dev\PracticePrograms\MakeWindow\build\MakeWindow\CMakeFiles\MakeWindow.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\cpp\PracticePrograms\MakeWindow C:\Dev\cpp\PracticePrograms\MakeWindow\MakeWindow C:\Dev\cpp\PracticePrograms\MakeWindow\build C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow C:\Dev\cpp\PracticePrograms\MakeWindow\build\MakeWindow\CMakeFiles\MakeWindow.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : MakeWindow/CMakeFiles/MakeWindow.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with C:/ProgramData/chocolatey/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/String.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/Window.dir/includes_CXX.rsp
 
 CXX_FLAGS = 
 
