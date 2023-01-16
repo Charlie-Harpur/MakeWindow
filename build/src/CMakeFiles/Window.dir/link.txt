@@ -1,2 +1,0 @@
-C:\ProgramData\chocolatey\bin\ar.exe qc libWindow.a CMakeFiles/Window.dir/Window.cpp.obj
-C:\ProgramData\chocolatey\bin\ranlib.exe libWindow.a
