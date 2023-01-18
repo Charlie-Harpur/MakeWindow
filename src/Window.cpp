@@ -1,4 +1,4 @@
-#include "MakeWindow/Window.h"
+#include "Window.h"
 
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
